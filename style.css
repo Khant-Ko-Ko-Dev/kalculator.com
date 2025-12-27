@@ -259,6 +259,11 @@ label {
   transition: all 0.3s ease;
 }
 
+a{
+  width: 100px;
+  heigh: 30px;
+}
+
 .clear {
   padding: 14px 32px;
   font-size: 16px;
@@ -456,3 +461,4 @@ label {
     font-size: 1rem;
   }
 }
+
