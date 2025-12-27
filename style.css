@@ -262,6 +262,16 @@ label {
 a{
   width: 100px;
   heigh: 30px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a5af9, #9f7aea);
+  box-shadow: 0 10px 25px rgba(106, 90, 249, 0.35);
+  transition: all 0.3s ease;
 }
 
 .clear {
@@ -461,4 +471,5 @@ a{
     font-size: 1rem;
   }
 }
+
 
