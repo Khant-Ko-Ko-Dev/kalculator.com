@@ -25,6 +25,7 @@ a {
   background: linear-gradient(135deg, #6a5af9, #9f7aea);
   box-shadow: 0 10px 25px rgba(106, 90, 249, 0.35);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 p {
@@ -480,6 +481,8 @@ label {
   background: linear-gradient(135deg, #6a5af9, #9f7aea);
   box-shadow: 0 10px 25px rgba(106, 90, 249, 0.35);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 }
+
