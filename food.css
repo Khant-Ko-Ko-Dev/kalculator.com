@@ -58,6 +58,7 @@ h1 {
     "t r d";
   gap: 5px;
   font-size: 16px;
+  height: 80vh;
 }
 
 /* Card Style */
@@ -142,6 +143,7 @@ h1 {
       "f s"
       "r r"
       "t d";
+    height: auto;
   }
 
   h1 {
@@ -152,6 +154,7 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
 
 
 
