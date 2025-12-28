@@ -471,8 +471,8 @@ label {
   }
 
   a {
-  padding: 10px 28px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 10px;
   font-weight: 600;
   color: #fff;
   border: none;
@@ -482,6 +482,8 @@ label {
   box-shadow: 0 10px 25px rgba(106, 90, 249, 0.35);
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 }
+
