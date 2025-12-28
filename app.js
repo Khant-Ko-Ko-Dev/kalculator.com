@@ -20,6 +20,7 @@ const body = document.querySelector("body");
 let resultH = document.querySelector(".result-h");
 let resultW = document.querySelector(".result-w");
 let btn2 = document.querySelector(".btn2");
+let btn3 = document.querySelector(".btn3");
 let lbs = document.querySelector("#lbs");
 let feet = document.querySelector("#feet");
 let inches = document.querySelector("#inches");
@@ -80,33 +81,63 @@ swc.addEventListener("click", function () {
 btn2.addEventListener("click", function () {
   try {
     l = Number(lbs.value);
-    f = Number(feet.value);
-    i = Number(inches.value);
+
     let kg = 0;
-    let rcm = 0;
-    let fcm = 0;
-    let icm = 0;
-    if (!l || !f || !i) {
+
+    if (!l) {
       throw new Error("Error: သတ်မှတ်ထားသော ဂဏန်းအမျိုးအစားသာထည့်ရန်");
     }
 
-    if (l <= 0 || f <= 0 || i <= 0) {
+    if (l <= 0) {
       throw new Error("Error: အပေါင်းကိန်းပြည့်သာထည့်လို့ရမည်");
     }
 
     kg = l * 0.453592;
-    fcm = f * 30.48;
-    icm = i * 2.54;
-    rcm = fcm + icm;
 
-    if (isNaN(kg, rcm) || !isFinite(kg, rcm)) {
+    if (isNaN(kg) || !isFinite(kg)) {
       throw new Error(
         "Error: တွက်ချက်မှုမအောင်မြင် ဖြည့်စွက်ထားသည်များကိုစစ်ဆေးရန်"
       );
     }
 
     resultH.innerHTML = `သင့်ကိုယ်အလေးချိန်မှာ ${kg} kg ဖြစ်သည်`;
+    resultW.innerHTML = "";
+    lbs.value = "";
+  } catch (error) {
+    resultH.innerHTML = error.message;
+    resultW.innerHTML = "";
+  }
+});
+
+btn3.addEventListener("click", function () {
+  try {
+    f = Number(feet.value);
+    i = Number(inches.value);
+    let rcm = 0;
+    let fcm = 0;
+    let icm = 0;
+    if (!f || !i) {
+      throw new Error("Error: သတ်မှတ်ထားသော ဂဏန်းအမျိုးအစားသာထည့်ရန်");
+    }
+
+    if (f <= 0 || i <= 0) {
+      throw new Error("Error: အပေါင်းကိန်းပြည့်သာထည့်လို့ရမည်");
+    }
+
+    fcm = f * 30.48;
+    icm = i * 2.54;
+    rcm = fcm + icm;
+
+    if (isNaN(rcm) || !isFinite(rcm)) {
+      throw new Error(
+        "Error: တွက်ချက်မှုမအောင်မြင် ဖြည့်စွက်ထားသည်များကိုစစ်ဆေးရန်"
+      );
+    }
+
     resultW.innerHTML = `သင့်အရပ်အမြင့်မှာ ${rcm} cm ဖြစ်သည်`;
+    resultH.innerHTML = "";
+    feet.value = "";
+    inches.value = "";
   } catch (error) {
     resultH.innerHTML = error.message;
     resultW.innerHTML = "";
