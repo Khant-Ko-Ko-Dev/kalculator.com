@@ -57,8 +57,6 @@ h1 {
     "f r s"
     "t r d";
   gap: 5px;
-  font-size: 16px;
-  height: 80vh;
 }
 
 /* Card Style */
@@ -81,6 +79,7 @@ h1 {
 /* Grid Areas */
 .breakfast {
   grid-area: f;
+  font-size: 1rem;
 }
 .others {
   grid-area: s;
@@ -154,6 +153,7 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
 
 
 
