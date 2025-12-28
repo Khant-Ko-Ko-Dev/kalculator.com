@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Calculator</title>
+    <link rel="stylesheet" href="food.css" />
+  </head>
+  <body>
+    <div class="all">
+      <h1>တနေ့စားတဲ့အစားအစာတွေကို ကယ်လိုရီတွက်မယ်</h1>
+      <div class="food_container">
+      <div class="food breakfast">
+        <h3>မနက်စာများ</h3>
+        <div class="b1">
+        <div class="input_container">
+          <label for="EKK">အီကြာကွေး 100g (၆ကျပ်သား)</label>
+          <input type="checkbox" value="392" id="EKK"/>
+        </div>
+         <div class="input_container">
+          <label >နံပြား</label>
+          <input type="checkbox" value="120"/>
+        </div>
+        <div class="input_container">
+          <label for="PLT">ပလာတာ 100g (၆ကျပ်သား)</label>
+          <input type="checkbox" value="358" id="PLT"/>
+        </div>
+        <div class="input_container">
+          <label for="MHG">မုန့်ဟင်းခါး အစုံထည့် ပုံမှန်ပြင်တပွဲ</label>
+          <input type="checkbox" value="500" id="MHG"/>
+        </div>
+
+        <div class="input_container">
+          <label for="CoN">အုန်းနို့ခေါက်ဆွဲ အစုံပါ ပုံမှန်ပြင်တပွဲ</label>
+          <input type="checkbox" value="600" id="CoN" />
+        </div>
+
+        <div class="input_container">
+          <label for="AST">အစုံသုတ် တပွဲ</label>
+          <input type="checkbox" value="400" id="AST"/>
+        </div>
+
+        <div class="input_container">
+          <label>နန်းကြီးသုတ် တပွဲ</label>
+          <input type="checkbox" value="800" />
+        </div>
+
+        <div class="input_container">
+          <label>ရှမ်းခေါက်ဆွဲ တပွဲ</label>
+          <input type="checkbox" value="800" />
+        </div>
+
+        <div class="input_container">
+          <label>ရခိုင်မုန့်တီ တပွဲ</label>
+          <input type="checkbox" value="250" />
+        </div>
+
+        <div class="input_container">
+          <label>ကြက်သားဆီချက်ခေါက်ဆွဲ တပွဲ</label>
+          <input type="checkbox" value="500" />
+        </div>
+        <div class="input_container">
+          <label>ဆမူဆာ ၃ ခု</label>
+          <input type="checkbox" value="91" />
+        </div></div>
+      </div>
+
+      <div class="food others">
+        <h3>သရေစာများ</h3>
+        <div class="input_container">
+          <label>ကြေးအိုး တပွဲ (ကြက်သား)</label>
+          <input type="checkbox" value="1600" />
+        </div>
+
+        <div class="input_container">
+          <label>ဘယာကြော် တခု</label>
+          <input type="checkbox" value="200" />
+        </div>
+
+        <div class="input_container">
+          <label>ဆမူဆာ ၃ ခု</label>
+          <input type="checkbox" value="91" />
+        </div>
+
+        <div class="input_container">
+          <label>ဘူးသီးကြော် တခု</label>
+          <input type="checkbox" value="70" />
+        </div>
+
+        <div class="input_container">
+          <label>ကော်ပြန့်စိမ်း ၁ ခု</label>
+          <input type="checkbox" value="76" />
+        </div>
+
+        <div class="input_container">
+          <label>တို့ဟူးသုတ် တပွဲ</label>
+          <input type="checkbox" value="200" />
+        </div>
+      </div>
+
+      <div class="result">
+        <h3>စုစုပေါင်း ကယ်လိုရီ</h3>
+        <span class="display"> 0 </span>ကယ်လိုရီ
+      </div>
+
+      <div class="food rice">
+        <h3>ထမင်းများ</h3>
+        <div class="input_container">
+          <label>ထမင်းဖြူ (ပန်းကန်လုံးတလုံး)</label> 
+          <input type="checkbox" value="260" />
+        </div>
+        <div class="input_container">
+          <label>ပဲပြုတ်ထမင်းဆီစမ်း (၉ ဇွန်း)</label>
+          <input type="checkbox" value="435" />
+        </div>
+
+        <div class="input_container">
+          <label>ပဲပြုတ်ထမင်းကြော် (၉ ဇွန်း)</label>
+          <input type="checkbox" value="426" />
+        </div>
+
+        <div class="input_container">
+          <label>ထမင်းပေါင်း တပွဲ (၁၂ ဇွန်း)</label>
+          <input type="checkbox" value="475" />
+        </div>
+
+        <div class="input_container">
+          <label>ကြက်သားဒန်ပေါက်(၁၃ ဇွန်း)</label>
+          <input type="checkbox" value="708" />
+        </div>
+      </div>
+      <div class="food curry">
+        <h3>ဟင်းများ</h3>
+        <div class="burmese_food">
+          <div class="input_container">
+            <label>ကြက်သားဟင်း တပွဲ</label>
+            <input type="checkbox" value="350" />
+          </div>
+
+          <div class="input_container">
+            <label>ဆိတ်သားဟင်း တပွဲ</label>
+            <input type="checkbox" value="325" />
+          </div>
+
+          <div class="input_container">
+            <label>ပုစွန်ဟင်း တပွဲ</label>
+            <input type="checkbox" value="240" />
+          </div>
+
+          <div class="input_container">
+            <label>အမဲသားဟင်း တပွဲ</label>
+            <input type="checkbox" value="434" />
+          </div>
+
+          <div class="input_container">
+            <label>ဝက်သားဟင်း တပွဲ</label>
+            <input type="checkbox" value="450" />
+          </div>
+
+          <div class="input_container">
+            <label>ငါးဟင်း တပွဲ</label>
+            <input type="checkbox" value="240" />
+          </div>
+      </div></div>
+      <button type="button" class="btn">ပြန်စမယ်</button>
+          <footer class="footer">
+    <p>
+      © <span id="year"></span> Khant Ko Ko All rights reserved.
+    </p>
+    <p class="version">
+      Version 1.0
+    </p>
+  </footer>
+    </div>
+
+    <script src="food.js"></script>
+  </body>
+</html>
