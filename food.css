@@ -51,13 +51,13 @@ h1 {
 
 /* Grid Layout */
 .food_container {
-  max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "f r s"
     "t r d";
-  gap: 16px;
+  gap: 5px;
+  font-size: 16px;
 }
 
 /* Card Style */
@@ -152,5 +152,6 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
 
 
