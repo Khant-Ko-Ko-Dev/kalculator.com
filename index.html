@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kcal Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="super">
+      <div class="all">
+        <input type="checkbox" id="switch" />
+        <label for="switch" class="ss"></label>
+        <a href="food.html">မြန်မာအစားအစာများ၏ ခန့်မှန်းကယ်လိုရီကြည့်ရန်ဒီကိုနှိပ်ပါ</a>
+        <h1 class="h-title">တနေ့တာ ကယ်လိုရီပမာဏသိရန်အောက်တွင်တွက်ပါ</h1>
+
+        <div class="BMI">
+          <label for="weight">သင့်ကိုယ်အလေးချိန်ကို kg ဖြင့်ဖြည့်ပါ</label>
+          <input type="number" id="weight" placeholder="အင်္ဂလိပ်လိုဂဏန်းပဲရိုက်ထည့်ပါ" />
+
+          <label for="height">သင့်အရပ်အမြင့်ကို cm ဖြင့်ဖြည့်ပါ</label>
+          <input type="number" id="height" placeholder="အင်္ဂလိပ်လိုဂဏန်းပဲရိုက်ထည့်ပါ" />
+
+          <label for="age">အသက်ဖြည့်ပါ</label>
+          <input type="number" id="age" placeholder="အင်္ဂလိပ်လိုဂဏန်းပဲရိုက်ထည့်ပါ" />
+          
+        </div>
+
+        <select name="sex" id="sex">
+          <option value="">-- ကျား/မရွေးချယ်ပါ --</option>
+          <option value="0">ကျား</option>
+          <option value="161">မ</option>
+        </select>
+
+        <div class="TDEE">
+          <select name="TDEE" id="TDEE">
+            <option value="">
+              သင့်လှုပ်ရှားမှု Level ရွေးပါ
+            </option>
+            <option value="1.2">လှုပ်ရှားမှုမရှိသလောက်နည်း</option>
+            <option value="1.375">၁ ပတ်မှာ ၃ ရက်လောက်လေ့ကျင့်ခန်းလုပ်ဖြစ်</option>
+            <option value="1.55">၁ ပတ်မှာ ၃-၅ ရက်လောက်လေ့ကျင့်ခန်းလုပ်ဖြစ်</option>
+            <option value="1.725">၁ ပတ်မှာ ၆-၇ ရက်လောက်လေ့ကျင့်ခန်းလုပ်ဖြစ်</option>
+            <option value="1.9">အားကစားသမား သို့ ကာယလုပ်သား</option>
+          </select>
+          <div class="result-TDEE"></div>
+        </div>
+<div class="btn-container">
+        <button class="btn">ကယ်လိုရီပမာဏတွက်ပါ</button>
+        <button class="clear">အသစ်တွက်ရန်</button></div>
+        <div class="result">
+            <div class="result-BMR"></div>
+            
+            <div class="result-BMR2"></div>
+            
+            <div class="result-BMR3"></div>
+            
+          </div>
+      </div>
+      <div class="others">
+        <h2>ပေါင်ချိန် နဲ့ အရပ်မြင့် ပေ နဲ့ လက်မ ကို kg နဲ့ cm သို့ပြောင်းရန်</h2>
+
+        <div class="others_inputs">
+        <label for="lbs">ပေါင်</label>
+        <input type="number" id="lbs">
+      </div>
+      <div class="btn2-container two">
+        <button class="btn btn2">kg သို့ပြောင်းပါ</button>
+     </div>
+      
+      <div class="others_inputs one">
+        <label for="feet">ပေ</label>
+        <input type="number" id="feet">
+        <label for="inches">လက်မ</label>
+        <input type="number" id="inches">
+      </div>   
+      
+        <div class="btn2-container two">
+        <button class="btn btn3">cm သို့ပြောင်းပါ</button>
+        <button class="clear clear2">အသစ်တွက်ရန်</button></div>
+        <div class="result_h_w">
+            <div class="result-h"></div>
+            <br />
+            <div class="result-w"></div>
+            <br />
+      </div>
+      <footer class="footer">
+    <p>
+      © <span id="year"></span> Khant Ko Ko All rights reserved.
+    </p>
+    <p class="version">
+      Version 1.0
+    </p>
+  </footer>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
