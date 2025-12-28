@@ -5,6 +5,9 @@
   font-family: system-ui, sans-serif;
 }
 
+.food{
+  font-size: 1rem;
+}
 body {
   min-height: 100vh;
   background: #0f172a;
@@ -79,7 +82,6 @@ h1 {
 /* Grid Areas */
 .breakfast {
   grid-area: f;
-  font-size: 1rem;
 }
 .others {
   grid-area: s;
@@ -153,6 +155,7 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
 
 
 
